@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'cuadernos/DEE/demografia/demografia_formlario';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="3. Índice" href="../../../genindex.html" />
+    <link rel="next" title="3. Formulario Muestreo" href="../muestreo/formulario_muestreo.html" />
     <link rel="prev" title="1. Formulario estadística" href="../estadistica/estadistica_formulario.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -152,9 +152,17 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Formulario demografía</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Muestreo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../muestreo/formulario_muestreo.html">3. Formulario Muestreo</a></li>
+
+
+
+
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Índice de términos</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">3. Índice de términos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../genindex.html">8. Índice de términos</a></li>
 </ul>
 
     </div>
@@ -256,7 +264,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-1-principios-generales">2.1. Tema 1. Principios Generales.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-2-mortalidad">2.2. Tema 2. Mortalidad.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-3-natalidad-y-fecundidad">2.3. Tema 3. Natalidad y Fecundidad.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-4-migraciones">2.4. Tema 4. Migraciones.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-4-migraciones">2.4. Tema 4. Migraciones.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-indirectas-de-la-migracion">2.4.1. Medidas indirectas de la migración.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices-migratorias">2.4.2. Matrices Migratorias.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proporciones">2.4.3. Proporciones.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-directas-de-la-migracion">2.4.4. Medidas directas de la migración.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edad-media-inmigrantes-emigrantes">2.4.5. Edad media Inmigrantes/Emigrantes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corrientes-migratorias">2.4.6. Corrientes migratorias</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-5-estructura-y-crecimiento">2.5. Tema 5. Estructura y Crecimiento</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-6-proyecciones-de-la-poblacion">2.6. Tema 6. Proyecciones de la Población.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-7-hogares">2.7. Tema 7. Hogares.</a></li>
@@ -447,49 +463,114 @@ reproductiva.</p></li>
 <section id="tema-4-migraciones">
 <h2><span class="section-number">2.4. </span>Tema 4. Migraciones.<a class="headerlink" href="#tema-4-migraciones" title="Permalink to this heading">#</a></h2>
 <p><strong>Migraciones.</strong> Cambio de residencia desde una unidad espacial
-administrativa a otra, en un intervalo de tiempo medido a priori.<br />
-Clasificación de las migraciones:\</p>
+administrativa a otra, en un intervalo de tiempo medido a priori.</p>
+<p>Clasificación de las migraciones:</p>
 <ul class="simple">
-<li><p>Temporales.\</p></li>
-<li><p>Definitivas.\</p></li>
-<li><p>Internas:\</p></li>
-<li><p>Intermunicipales.\</p></li>
-<li><p>Interprovinciales.\</p></li>
-<li><p>Intercomunitarias.\</p></li>
-<li><p>Internacionales.<br />
-<strong>Medidas indirectas de la migración.</strong>\</p></li>
+<li><p>Temporales.</p></li>
+<li><p>Definitivas.</p></li>
+<li><p>Internas:</p></li>
+<li><p>Intermunicipales.</p></li>
+<li><p>Interprovinciales.</p></li>
+<li><p>Intercomunitarias.</p></li>
+<li><p>Internacionales.</p></li>
 </ul>
+<section id="medidas-indirectas-de-la-migracion">
+<h3><span class="section-number">2.4.1. </span>Medidas indirectas de la migración.<a class="headerlink" href="#medidas-indirectas-de-la-migracion" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Ecuación compensadora.
-<span class="math notranslate nohighlight">\(P^{t+n}=P^t+N^{t,t+n}-D^{t,t+n}+I^{t,t+n}-E^{t,t+n}\)</span><br />
-Despejando
-<span class="math notranslate nohighlight">\((I^{t,t+n}-E^{t,t+n})=(P^{t+n}-P^t)-(N^{t,t+n}-D^{t,t+n}) \equiv\)</span><br />
-MigraciónNeta=CrecimientoReal - CrecimientoNatural/Vegetativo.<br />
-2)Método de la población prevista o de los supervivientes.
-<span class="math notranslate nohighlight">\(MN_x=P^{t+n}_{x+n}-S_xP^t_x\)</span> con<br />
-<span class="math notranslate nohighlight">\(MN_0=P^{t+n}_n-S_{0,n}N^{t,t+n}\)</span> y
-<span class="math notranslate nohighlight">\(S_{x,x+n}=\frac{L_{x+n, x+n+5}}{L_{x,x+5}}\)</span>.<br />
-**Es muy probable que no haya tablas de mortalidad de la zona, por
-ello, una vez sabido el nivel de mortalidad se pueden usar tablas de
-moralidad tipo, sobre todo las de Princeton.<br />
-<strong>Medidas directas de la migración.</strong>\</p></li>
-<li><p>Tasa de Migración Neta:
-<span class="math notranslate nohighlight">\(TMN^{t,t+n}=\frac{MN^{t,t+n}}{0.5(P^t+P^{t+n})}\)</span>. Es una tasa bruta!!\</p></li>
-<li><p>Tasa de Migración Neta por Edades:
-<span class="math notranslate nohighlight">\(TMN^{t,t+n}_{x,x+n}=\frac{MN^{t,t+n}_x}{0.5(P^t_x+P^{t+n}_{x+n})}\)</span>.\</p></li>
-<li><p>Tasa Bruta de Emigración:
-<span class="math notranslate nohighlight">\(m^{t,t+n}=\frac{1}{n}*\frac{M^{t,t+n}}{0.5(P^t+P^{t+n})}*1000\)</span>. El
-numerador son emigraciones.\</p></li>
-<li><p>Índice de Atracción:
-<span class="math notranslate nohighlight">\(i^{t,t+n}=frac{1}{n}*\frac{I^{t,t+n}}{0.5(P^t+P^{t+n})}*1000\)</span>. Esta
-“tasa de imigración” no es una tasa, es una proporción, ya que la la
-población a riesgo no forma parte del denominador.\</p></li>
-<li><p>Tasa Específica por Edades:
-<span class="math notranslate nohighlight">\(m^{t,t+n}_{x,x+n}= \frac{M^{t,t+n}_{x,x+n}}{P_{x,x+n}}\)</span>. El numerador
-son migraciones.\</p></li>
-<li><p>Índice sintético de Migración. <span class="math notranslate nohighlight">\(ISM=n*\sum_x m_{x,x+n}\)</span>. Como la
-migración es un suceso renovable este indicador puede ser mayor a 1.</p></li>
+<li><p>Ecuación compensadora.</p></li>
 </ol>
+<p id="index-1"><span class="math notranslate nohighlight">\(P^{t+n}=P^t+N^{t,t+n}-D^{t,t+n}+I^{t,t+n}-E^{t,t+n}\)</span></p>
+<p>Despejando</p>
+<p><span class="math notranslate nohighlight">\((I^{t,t+n}-E^{t,t+n})=(P^{t+n}-P^t)-(N^{t,t+n}-D^{t,t+n}) \equiv\)</span><br />
+MigraciónNeta=CrecimientoReal - CrecimientoNatural/Vegetativo.</p>
+<p>2)Método de la población prevista o de los supervivientes.</p>
+<p><span class="math notranslate nohighlight">\(MN_x=P^{t+n}_{x+n}-S_xP^t_x\)</span> con<br />
+<span class="math notranslate nohighlight">\(MN_0=P^{t+n}_n-S_{0,n}N^{t,t+n}\)</span> y
+<span class="math notranslate nohighlight">\(S_{x,x+n}=\frac{L_{x+n, x+n+5}}{L_{x,x+5}}\)</span>.</p>
+<p>**Es muy probable que no haya tablas de mortalidad de la zona, por
+ello, una vez sabido el nivel de mortalidad se pueden usar tablas de
+mortalidad tipo, sobre todo las de Princeton.</p>
+</section>
+<section id="matrices-migratorias">
+<h3><span class="section-number">2.4.2. </span>Matrices Migratorias.<a class="headerlink" href="#matrices-migratorias" title="Permalink to this heading">#</a></h3>
+<p id="index-2"><span class="math notranslate nohighlight">\(M_{i,j}=\)</span> Migraciones de la zona i hacia la zona j</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(M_{i,j}+M_{j,i} =\)</span> Migración bruta entre las zona i y j</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{i,j}+M_{j,i} =\)</span> Migración neta o saldo migratorio entre las zona i y j</p></li>
+</ul>
+<p><img alt="Matriz miggratoria" src="../../../_images/matrizMigratoria.PNG" /></p>
+<ul class="simple">
+<li><p>Nº inmigrantes en I: <span class="math notranslate nohighlight">\(I_i=P_i^t-M_{i,i}\)</span></p></li>
+<li><p>Nº emigrantes en j: <span class="math notranslate nohighlight">\(E_j=P_j^{t-n}-M_{j,j}\)</span></p></li>
+</ul>
+</section>
+<section id="proporciones">
+<h3><span class="section-number">2.4.3. </span>Proporciones.<a class="headerlink" href="#proporciones" title="Permalink to this heading">#</a></h3>
+<p id="index-3"><strong>Índice de aloctonía</strong> (proporción de población no nativa)</p>
+<div class="math notranslate nohighlight">
+\[IA=\frac{NN^t}{P^t}\]</div>
+<p>(NN= No nativos)</p>
+<p><strong>Proporción de emigrantes</strong> (Proporción emigrantes respecto población al inicio)</p>
+<div class="math notranslate nohighlight">
+\[PE_{i}=\frac{\sum_{j=1,i\ne j}^{z}M_{i,j})}{P_{i}^{t-n}}\]</div>
+<p><strong>Proporción de inmigrantes</strong></p>
+<div class="math notranslate nohighlight">
+\[PI_{j}=\frac{\sum_{i=1,i\ne j}^{z}M_{i,j}+(I.inte)_{i}}{P_{j}^{t}}\]</div>
+</section>
+<section id="medidas-directas-de-la-migracion">
+<h3><span class="section-number">2.4.4. </span>Medidas directas de la migración.<a class="headerlink" href="#medidas-directas-de-la-migracion" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple" id="index-4">
+<li><p>Tasa de Migración Neta (Migración neta=I-E):</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(TMN^{t,t+n}=\frac{MN^{t,t+n}}{0.5(P^t+P^{t+n})}\)</span>. Es una tasa bruta!!</p>
+<p>1.1) Tasa bruta de inmigración Exterior</p>
+<div class="math notranslate nohighlight">
+\[TBI^{t}=\frac{I^{t}}{PM^{t}}\cdot1000\]</div>
+<p>1.2) Tasa bruta de Emigración Exterior</p>
+<div class="math notranslate nohighlight">
+\[TBE^{t}=\frac{E^{t}}{PM^{t}}\cdot1000\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Tasa de Migración Neta por Edades:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(TMN^{t,t+n}_{x,x+n}=\frac{MN^{t,t+n}_x}{0.5(P^t_x+P^{t+n}_{x+n})}\)</span>.</p>
+<ol class="arabic simple" start="3">
+<li><p>Tasa Bruta de Emigración:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(m^{t,t+n}=\frac{1}{n}*\frac{E^{t,t+n}}{0.5(P^t+P^{t+n})}*1000\)</span>. El numerador son emigraciones.</p>
+<ol class="arabic simple" start="4">
+<li><p>Índice de Atracción:
+<span class="math notranslate nohighlight">\(i^{t,t+n}=\frac{1}{n}*\frac{I^{t,t+n}}{0.5(P^t+P^{t+n})}*1000\)</span>. Esta
+“tasa de imigración” no es una tasa, es una proporción, ya que la la
+población a riesgo no forma parte del denominador.</p></li>
+<li><p>Tasa Específica por Edades:
+<span class="math notranslate nohighlight">\(m^{t,t+n}_{x,x+n}= \frac{M^{t,t+n}_{x,x+n}}{P_{x}}\)</span>. El numerador son migraciones y denominador población al comienzo del período.</p></li>
+</ol>
+<ol class="arabic simple" id="index-5" start="6">
+<li><p>Índice sintético de Migración (<strong>calendario migración</strong>. <span class="math notranslate nohighlight">\(ISM=n*\sum_x m_{x,x+n}\)</span>. Como la migración es un suceso renovable este indicador puede ser mayor a 1.</p></li>
+</ol>
+</section>
+<section id="edad-media-inmigrantes-emigrantes">
+<h3><span class="section-number">2.4.5. </span>Edad media Inmigrantes/Emigrantes<a class="headerlink" href="#edad-media-inmigrantes-emigrantes" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[Edad\ media^{t}=\sum_{x}(x+0.5)\frac{(sucesos\ edad\ x)^{t}}{sucessos\ totales}\]</div>
+<div class="math notranslate nohighlight">
+\[Edad\ media^{t}=\sum_{x}(x+0.5)\frac{tasa_{x}^{t}}{\sum_{x}tasa_{x}^{t}}\]</div>
+<p>Edad media inmigrantes provenientes extranjero <span class="math notranslate nohighlight">\(EMI^{t}=\frac{\sum_{x=0}^{90+}(x+0.5)\cdot I_{x}^{t}}{\sum_{x=0}^{90}I_{x}^{t}}\)</span></p>
+<p>Edad media Emigración al Extranjero <span class="math notranslate nohighlight">\(EME^{t}=\frac{\sum_{x=0}^{75+}(x+0.5)e_{x}^{t}}{ICE^{t}}\)</span></p>
+</section>
+<section id="corrientes-migratorias">
+<h3><span class="section-number">2.4.6. </span>Corrientes migratorias<a class="headerlink" href="#corrientes-migratorias" title="Permalink to this heading">#</a></h3>
+<ul class="simple" id="index-6">
+<li><p>Tasa de emigración parcial (entre i y j):<span class="math notranslate nohighlight">\(m_{i}^{E}=\frac{M_{i,j}}{P_{i}}\cdot1000\)</span></p></li>
+<li><p>Tasa de inmigración parcial (entre i y j): <span class="math notranslate nohighlight">\(m_{i}^{I}=\frac{M_{i,j}}{P_{j}}\cdot1000\)</span></p></li>
+<li><p>Tasa Bruta de intercambio: <span class="math notranslate nohighlight">\(TBI_{ij}=\frac{M_{ij}+M_{ji}}{P_{i}+P_{j}}\cdot1000\)</span></p></li>
+</ul>
+<ul class="simple" id="index-7">
+<li><p>Tasa neta de intercambio: <span class="math notranslate nohighlight">\(TNI_{ij}=\frac{M_{ij}-M_{ji}}{P_{i}+P_{j}}\cdot1000\)</span></p></li>
+<li><p>Índice de compensación: <span class="math notranslate nohighlight">\(Indie\ compensaci\acute{o}n=\frac{M_{ij}-M_{ji}}{M_{ij}+M_{ji}}=\frac{Saldo\ neto}{Migraci\acute{o}n\ bruta}\)</span></p></li>
+<li><p>Índice migración diferencia: <span class="math notranslate nohighlight">\(d_{x}=\frac{E_{x}\cdot P}{E\cdot P_{x}}-1\)</span></p></li>
+</ul>
+</section>
 </section>
 <section id="tema-5-estructura-y-crecimiento">
 <h2><span class="section-number">2.5. </span>Tema 5. Estructura y Crecimiento<a class="headerlink" href="#tema-5-estructura-y-crecimiento" title="Permalink to this heading">#</a></h2>
@@ -768,11 +849,11 @@ Actualmente, ya no tiene interés.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../../genindex.html"
+       href="../muestreo/formulario_muestreo.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Índice</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Formulario Muestreo</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -797,7 +878,15 @@ Actualmente, ya no tiene interés.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-1-principios-generales">2.1. Tema 1. Principios Generales.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-2-mortalidad">2.2. Tema 2. Mortalidad.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-3-natalidad-y-fecundidad">2.3. Tema 3. Natalidad y Fecundidad.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-4-migraciones">2.4. Tema 4. Migraciones.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-4-migraciones">2.4. Tema 4. Migraciones.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-indirectas-de-la-migracion">2.4.1. Medidas indirectas de la migración.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices-migratorias">2.4.2. Matrices Migratorias.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proporciones">2.4.3. Proporciones.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medidas-directas-de-la-migracion">2.4.4. Medidas directas de la migración.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edad-media-inmigrantes-emigrantes">2.4.5. Edad media Inmigrantes/Emigrantes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corrientes-migratorias">2.4.6. Corrientes migratorias</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-5-estructura-y-crecimiento">2.5. Tema 5. Estructura y Crecimiento</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-6-proyecciones-de-la-poblacion">2.6. Tema 6. Proyecciones de la Población.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tema-7-hogares">2.7. Tema 7. Hogares.</a></li>
