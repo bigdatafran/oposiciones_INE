@@ -13,7 +13,7 @@ Nada más, simplemente me resta que cualquier duda, aportación, sugerencia o ne
 un correo electrónico a la siguiente dirección: apuntesfranciscoro@movistar.es    
 
 Un saludo y mucha suerte a l@s jóvenes que quieran participar en este gran proyecto para el País, como es la aportación de información 
-estadísitica de enrme relevancia y trascendencia para el desarrollo de España.
+estadísitica de enorme relevancia y trascendencia para el desarrollo de España.
 
 Francisco Rodríguez Redondo
 
