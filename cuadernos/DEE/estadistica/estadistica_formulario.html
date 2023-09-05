@@ -641,7 +641,7 @@ cuartiles(<span class="math notranslate nohighlight">\(Q_1=25\%, Q_2=50\%, Q_3=7
 <section id="tema-15">
 <h2><span class="section-number">1.15. </span>Tema 15<a class="headerlink" href="#tema-15" title="Permalink to this heading">#</a></h2>
 <p><strong>Medidas de dispersión absoluta</strong></p>
-<ul class="simple">
+<ul>
 <li><p>Rango/ recorrido. Diferencia entre los valores máximo y mínimo de la
 variable, <span class="math notranslate nohighlight">\(Re=x_{max}-x_{min}\)</span>.\</p></li>
 <li><p>Varianza. media aritmética de los cuadrados de las desviaciones de los
@@ -664,13 +664,39 @@ media.\</p></li>
 variable que se obtiene mediante una transformación lineal,
 <span class="math notranslate nohighlight">\(Z=\frac{X-\bar{x}}{S}\)</span>. La nueva variable tendrá media 0 y desviación
 típica 1.<br />
-<strong>Transformaciones de escala y origen</strong></p></li>
+<strong>Transformaciones de escala y origen</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Estadístico</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Y=X\pm a\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Y=b*X\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Y=X/b\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Y=b*X\pm a\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Varianza</p></td>
+<td><p>Igual</p></td>
+<td><p><span class="math notranslate nohighlight">\(S^2_Y=b^2*S^2_X\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S^2_Y=\frac{S^2X}{b^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S^2_Y= b^2*S^2_X\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Coeficiente de variación</p></td>
+<td><p><span class="math notranslate nohighlight">\(CV_Y=\frac{S_X}{|X \pm a|}\)</span></p></td>
+<td><p>Igual</p></td>
+<td><p>Igual</p></td>
+<td><p><span class="math notranslate nohighlight">\(CV_Y=\frac{|b|*S_x}{|b*\bar{x}\pm a|}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Recorrido</p></td>
+<td><p>Igual</p></td>
+<td><p><span class="math notranslate nohighlight">\(Re(Y)= |b|* Re(X)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(Re(Y)= \frac{Re(X)}{|b|}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(Re(Y)=|b|*Re(X)\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
-<p>|Estadístico                   |<span class="math notranslate nohighlight">\(Y=X\pm a\)</span>                  |<span class="math notranslate nohighlight">\(Y=b*X\)</span>          |<span class="math notranslate nohighlight">\(Y=X/b\)</span>                 |<span class="math notranslate nohighlight">\(Y=b*X\pm a\)</span>    |
-|—————————– |————————— |—————  | ——————–  -| —————|
-|Varianza                      |Igual                       |<span class="math notranslate nohighlight">\(S^2_Y=b^2*S^2_X\)</span>|<span class="math notranslate nohighlight">\(S^2_Y=\frac{S^2X}{b^2}\)</span>|<span class="math notranslate nohighlight">\(S^2_Y= b^2*S^2_X\)</span>|
-|Coeficiente de variación      |<span class="math notranslate nohighlight">\(CV_Y=\frac{S_X}{\|X \pm a\|}\)</span> |Igual    |Igual      |<span class="math notranslate nohighlight">\(CV_Y=\frac{|b|*S_x}|b*\bar{x}\pm a|}\)</span> |
-|Recorrido                     |Igual              | <span class="math notranslate nohighlight">\(Re(Y)= |b|* Re(X)\)</span>   |<span class="math notranslate nohighlight">\(Re(Y)= \frac{Re(X)}{|b|}\)</span> |<span class="math notranslate nohighlight">\(Re(Y)=|b|*Re(X)\)</span>|</p>
 </section>
 <section id="tema-16">
 <h2><span class="section-number">1.16. </span>Tema 16<a class="headerlink" href="#tema-16" title="Permalink to this heading">#</a></h2>
@@ -693,28 +719,119 @@ máxima.</p>
 </section>
 <section id="tema-17">
 <h2><span class="section-number">1.17. </span>Tema 17<a class="headerlink" href="#tema-17" title="Permalink to this heading">#</a></h2>
-<p><strong>Distribución de frecuencias absoluta y distribución marginal</strong>\</p>
-<p>Valores X/Y    <span class="math notranslate nohighlight">\(y_1\)</span>     …    <span class="math notranslate nohighlight">\(y_j\)</span>     …   <span class="math notranslate nohighlight">\(y_{J}\)</span>     <span class="math notranslate nohighlight">\(n_i\)</span></p>
-<hr class="docutils" />
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  $x_1$      $n_{11}$   \...   $n_{1j}$   \...   $n_{1J}$   $n_{1.}$
-  \...         \...     \...     \...     \...     \...       \...
-  $x_i$      $n_{i1}$   \...   $n_{ij}$   \...   $n_{iJ}$   $n_{i.}$
-  \...         \...     \...     \...     \...     \...       \...
-  $x_I$      $n_{I1}$   \...   $n_{Ij}$   \...   $n_{IJ}$   $n_{I.}$
-$n_{.j}$     $n_{.1}$   \...   $n_{.j}$   \...   $n_{.J}$      N
-</pre></div>
-</div>
+<p><strong>Distribución de frecuencias absoluta y distribución marginal</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Valores X/Y</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(y_1\)</span></p></th>
+<th class="head"><p>…</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(y_j\)</span></p></th>
+<th class="head"><p>…</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(y_{J}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(n_i\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{11}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{1j}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{1J}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{1.}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_i\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{i1}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{ij}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{iJ}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{i.}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_I\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{I1}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{Ij}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{IJ}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{I.}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(n_{.j}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{.1}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{.j}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{.J}\)</span></p></td>
+<td><p>N</p></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Distribución de frecuencias relativas</strong> con
 <span class="math notranslate nohighlight">\(f_{ij}=\frac{n_{ij}}{N}\)</span>.\</p>
-<p>Valores X/Y    <span class="math notranslate nohighlight">\(y_1\)</span>     …    <span class="math notranslate nohighlight">\(y_j\)</span>     …   <span class="math notranslate nohighlight">\(y_{J}\)</span></p>
-<hr class="docutils" />
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  $x_1$      $f_{11}$   \...   $f_{1j}$   \...   $f_{1J}$
-  \...         \...     \...     \...     \...     \...
-  $x_i$      $f_{i1}$   \...   $f_{ij}$   \...   $f_{iJ}$
-  \...         \...     \...     \...     \...     \...
-  $x_I$      $f_{I1}$   \...   $f_{Ij}$   \...   $f_{IJ}$
-</pre></div>
-</div>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Valores X/Y</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(y_1\)</span></p></th>
+<th class="head"><p>…</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(y_j\)</span></p></th>
+<th class="head"><p>…</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(y_{J}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{11}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{1j}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{1J}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_i\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{i1}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{ij}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{iJ}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_I\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{I1}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{Ij}\)</span></p></td>
+<td><p>…</p></td>
+<td><p><span class="math notranslate nohighlight">\(f_{IJ}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>X e Y serán independientes si <span class="math notranslate nohighlight">\(f_{ij} = f_{i.}* f_{.j} \forall i,j\)</span>.<br />
 <strong>Covarianza</strong>. <span class="math notranslate nohighlight">\(S_{XY}=\frac{\sum_i x_iy_i}{N}-\bar{x}\bar{y}\)</span>.<br />
 Interpretación: 1) si es muy cercana a 0 no existe relación entre las
@@ -760,18 +877,18 @@ ajusta bien, 2) cuanto más próximo a 1 mejor será el modelo y 3) si
 </section>
 <section id="tema-19">
 <h2><span class="section-number">1.19. </span>Tema 19<a class="headerlink" href="#tema-19" title="Permalink to this heading">#</a></h2>
-<p><strong>Limitaciones del método de mínimos cuadrados</strong>.\</p>
+<p><strong>Limitaciones del método de mínimos cuadrados</strong>.</p>
 <ul class="simple">
-<li><p>Variable dependiente truncada, faltan datos de la muestra.\</p></li>
+<li><p>Variable dependiente truncada, faltan datos de la muestra.</p></li>
 <li><p>Variable dependiente censurada, mediciones incompletas y/o asignación
-a un cierto valor un número simbólico.\</p></li>
+a un cierto valor un número simbólico.</p></li>
 <li><p>Modelos Tobit, evolución del modelo censurado. Considera la existencia
 de una variable indepndiente <span class="math notranslate nohighlight">\(Y^*\)</span> no observable y una variable <span class="math notranslate nohighlight">\(Y\)</span>
 observable formada por la parte no censurable de <span class="math notranslate nohighlight">\(Y^*\)</span>. El objetivo es
-estimar <span class="math notranslate nohighlight">\(Y^*\)</span> empleando solo la muestra de la parte observable.<br />
+estimar <span class="math notranslate nohighlight">\(Y^*\)</span> empleando solo la muestra de la parte observable.
 <em>Conclusión:</em> solamente si la variable dependiente es continua con
-dominio <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> el método de mínismos cuadrados es óptimo.<br />
-<strong>Interpretación de los coeficientes de regresión.</strong>\</p></li>
+dominio <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> el método de mínismos cuadrados es óptimo.
+<strong>Interpretación de los coeficientes de regresión.</strong></p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_1\)</span> o coeficiente de regresión, indica el tipo de dependiencia
 entre las variables:</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_1&lt;0\)</span>: dependencia negativa, cuando aumenta Y disminuye X.</p></li>
