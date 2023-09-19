@@ -268,28 +268,34 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3. Formulario Muestreo</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-muestreo">3.1. Tipos de muestreo.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-aleatorio-simple">3.2. Muestreo aleatorio simple.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-sin-reposicion">3.3. Muestreo sin reposición.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimacion-de-varianzas">3.3.1. Estimación de varianzas.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tamano-de-la-muestra">3.3.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado">3.3.2.1. Para un error de muestreo dado.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-relativo-de-muestreo-dado">3.3.2.2. Para un error relativo de muestreo dado.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intervalos-de-confianza-con-normalidad">3.2. Intervalos de Confianza con normalidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#se-puede-suponer-hay-insesgadez">3.2.1. Se puede suponer hay insesgadez</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-hay-distribucion-normal">3.2.2. No hay distribución normal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-estimador-es-sesgado">3.2.3. El estimador es sesgado</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-aleatorio-simple">3.3. Muestreo aleatorio simple.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-sin-reposicion">3.4. Muestreo sin reposición.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimacion-de-varianzas">3.4.1. Estimación de varianzas.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tamano-de-la-muestra">3.4.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado">3.4.2.1. Para un error de muestreo dado.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-relativo-de-muestreo-dado">3.4.2.2. Para un error relativo de muestreo dado.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-con-reposicion">3.4. Muestreo con reposición.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.4.1. Estimación de varianzas.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.4.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado-e-sigma-hat-theta">3.4.2.1. Para un error de muestreo dado.<span class="math notranslate nohighlight">\(e=\sigma(\hat{\theta}).\)</span></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-dado-e-r-cv-hat-theta">3.4.2.2. Error relativo de muestreo dado. <span class="math notranslate nohighlight">\(e_{r}=CV(\hat{\theta})\)</span></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta">3.4.2.3. Error de muestreo y coeficientes de confianza dados. <span class="math notranslate nohighlight">\(e_{\alpha}=z_{\alpha/2}\sigma(\hat{\theta})\)</span></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta">3.4.2.4. Error relativo de muestreo y coeficiente de confianza dados.<span class="math notranslate nohighlight">\(e_{r\alpha}=z_{\alpha/2}CV(\hat{\theta})\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-con-reposicion">3.5. Muestreo con reposición.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.5.1. Estimación de varianzas.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.5.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado-e-sigma-hat-theta">3.5.2.1. Para un error de muestreo dado.<span class="math notranslate nohighlight">\(e=\sigma(\hat{\theta}).\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-dado-e-r-cv-hat-theta">3.5.2.2. Error relativo de muestreo dado. <span class="math notranslate nohighlight">\(e_{r}=CV(\hat{\theta})\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta">3.5.2.3. Error de muestreo y coeficientes de confianza dados. <span class="math notranslate nohighlight">\(e_{\alpha}=z_{\alpha/2}\sigma(\hat{\theta})\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta">3.5.2.4. Error relativo de muestreo y coeficiente de confianza dados.<span class="math notranslate nohighlight">\(e_{r\alpha}=z_{\alpha/2}CV(\hat{\theta})\)</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas">3.5. Notas.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas">3.6. Notas.</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-estratificado">4. Muestreo estratificado.</a><ul class="visible nav section-nav flex-column">
@@ -395,13 +401,33 @@ document.write(`
 </table>
 <p>(*) Todas las muestras son equiprobables, salvo en el caso de No importar orden y con reposición.</p>
 </section>
+<section id="intervalos-de-confianza-con-normalidad">
+<h2><span class="section-number">3.2. </span>Intervalos de Confianza con normalidad<a class="headerlink" href="#intervalos-de-confianza-con-normalidad" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\lambda_{\alpha/2}=F_{N(0,1)}^{-1}\left(1-\frac{\alpha}{2}\right)\]</div>
+<section id="se-puede-suponer-hay-insesgadez">
+<h3><span class="section-number">3.2.1. </span>Se puede suponer hay insesgadez<a class="headerlink" href="#se-puede-suponer-hay-insesgadez" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\left[\hat{\theta}-\lambda_{\alpha/2}\sigma(\hat{\theta})\ ;\ \hat{\theta}+\lambda_{\alpha/2}\sigma(\hat{\theta})\right]\]</div>
+</section>
+<section id="no-hay-distribucion-normal">
+<h3><span class="section-number">3.2.2. </span>No hay distribución normal<a class="headerlink" href="#no-hay-distribucion-normal" title="Permalink to this heading">#</a></h3>
+<p>Se utiliza la t-student: <span class="math notranslate nohighlight">\(\left[\hat{\theta}-t_{n-1,\alpha/2}\sigma(\hat{\theta})\ ;\ \hat{\theta}+t_{n-1,\alpha/2}\sigma(\hat{\theta})\right]\)</span></p>
+<p>Se puede utilizar también la desigualdad de Tchebichev: <span class="math notranslate nohighlight">\(\left[\hat{\theta}-\frac{\sigma(\hat{\theta})}{\sqrt{\alpha}}\ ;\ \hat{\theta}+\frac{\sigma(\hat{\theta})}{\sqrt{\alpha}}\right]\)</span></p>
+</section>
+<section id="el-estimador-es-sesgado">
+<h3><span class="section-number">3.2.3. </span>El estimador es sesgado<a class="headerlink" href="#el-estimador-es-sesgado" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\left[\hat{\theta}-\lambda_{\alpha/2}\sigma(\hat{\theta})-B(\hat{\theta})\ ;\ \hat{\theta}+\lambda_{\alpha/2}\sigma(\hat{\theta})-B(\hat{\theta})\right]\]</div>
+</section>
+</section>
 <section id="muestreo-aleatorio-simple">
-<h2><span class="section-number">3.2. </span>Muestreo aleatorio simple.<a class="headerlink" href="#muestreo-aleatorio-simple" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.3. </span>Muestreo aleatorio simple.<a class="headerlink" href="#muestreo-aleatorio-simple" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\hat{X}=N\overline{x};\quad\hat{\overline{X}}=\overline{x};\quad\hat{P}=p;\quad\hat{A}=N\hat{P}\]</div>
 </section>
 <section id="muestreo-sin-reposicion">
-<h2><span class="section-number">3.3. </span>Muestreo sin reposición.<a class="headerlink" href="#muestreo-sin-reposicion" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.4. </span>Muestreo sin reposición.<a class="headerlink" href="#muestreo-sin-reposicion" title="Permalink to this heading">#</a></h2>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X})=N^{2}(1-f)\frac{S^{2}}{n}\)</span></p></th>
@@ -417,7 +443,7 @@ document.write(`
 <p>Para el caso de proporciones, se tiene:
 <span class="math notranslate nohighlight">\(S^{2}=\frac{N}{N-1}PQ\)</span> y <span class="math notranslate nohighlight">\(\hat{S}^{2}=\frac{n}{n-1}\hat{P}\hat{Q}\)</span></p>
 <section id="estimacion-de-varianzas">
-<h3><span class="section-number">3.3.1. </span>Estimación de varianzas.<a class="headerlink" href="#estimacion-de-varianzas" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.4.1. </span>Estimación de varianzas.<a class="headerlink" href="#estimacion-de-varianzas" title="Permalink to this heading">#</a></h3>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\hat{V}(\hat{X})=N^{2}(1-f)\frac{\hat{S}^{2}}{n}\)</span></p></th>
@@ -432,9 +458,9 @@ document.write(`
 </table>
 </section>
 <section id="tamano-de-la-muestra">
-<h3><span class="section-number">3.3.2. </span>Tamaño de la muestra.<a class="headerlink" href="#tamano-de-la-muestra" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.4.2. </span>Tamaño de la muestra.<a class="headerlink" href="#tamano-de-la-muestra" title="Permalink to this heading">#</a></h3>
 <section id="para-un-error-de-muestreo-dado">
-<h4><span class="section-number">3.3.2.1. </span>Para un error de muestreo dado.<a class="headerlink" href="#para-un-error-de-muestreo-dado" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">3.4.2.1. </span>Para un error de muestreo dado.<a class="headerlink" href="#para-un-error-de-muestreo-dado" title="Permalink to this heading">#</a></h4>
 <p>-Para la media</p>
 <div class="math notranslate nohighlight">
 \[n=\frac{S^{2}}{e^{2}+\frac{S^{2}}{N}}=\frac{NS^{2}}{Ne^{2}+S^{2}}\]</div>
@@ -449,7 +475,7 @@ document.write(`
 \[n=\frac{N^{3}PQ}{e^{2}(N-1)+N^{2}PQ}\]</div>
 </section>
 <section id="para-un-error-relativo-de-muestreo-dado">
-<h4><span class="section-number">3.3.2.2. </span>Para un error relativo de muestreo dado.<a class="headerlink" href="#para-un-error-relativo-de-muestreo-dado" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">3.4.2.2. </span>Para un error relativo de muestreo dado.<a class="headerlink" href="#para-un-error-relativo-de-muestreo-dado" title="Permalink to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[e_{r}(\hat{\theta})=CV(\hat{\theta})=\frac{\sigma(\hat{\theta})}{E(\hat{\theta})}\]</div>
 <p>-Para la media:</p>
@@ -465,7 +491,7 @@ document.write(`
 </section>
 </section>
 <section id="muestreo-con-reposicion">
-<h2><span class="section-number">3.4. </span>Muestreo con reposición.<a class="headerlink" href="#muestreo-con-reposicion" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.5. </span>Muestreo con reposición.<a class="headerlink" href="#muestreo-con-reposicion" title="Permalink to this heading">#</a></h2>
 <p>Los estimadores insesgados son los mismos que para el caso de muestreo
 sin reposición.</p>
 <table class="table">
@@ -481,7 +507,7 @@ sin reposición.</p>
 </tbody>
 </table>
 <section id="id1">
-<h3><span class="section-number">3.4.1. </span>Estimación de varianzas.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.5.1. </span>Estimación de varianzas.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\hat{V}(\hat{X})=N^{2}\frac{\hat{S}^{2}}{n}\)</span></p></th>
@@ -496,9 +522,9 @@ sin reposición.</p>
 </table>
 </section>
 <section id="id2">
-<h3><span class="section-number">3.4.2. </span>Tamaño de la muestra.<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">3.5.2. </span>Tamaño de la muestra.<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <section id="para-un-error-de-muestreo-dado-e-sigma-hat-theta">
-<h4><span class="section-number">3.4.2.1. </span>Para un error de muestreo dado.<span class="math notranslate nohighlight">\(e=\sigma(\hat{\theta}).\)</span><a class="headerlink" href="#para-un-error-de-muestreo-dado-e-sigma-hat-theta" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">3.5.2.1. </span>Para un error de muestreo dado.<span class="math notranslate nohighlight">\(e=\sigma(\hat{\theta}).\)</span><a class="headerlink" href="#para-un-error-de-muestreo-dado-e-sigma-hat-theta" title="Permalink to this heading">#</a></h4>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>media</p></th>
@@ -517,7 +543,7 @@ sin reposición.</p>
 </table>
 </section>
 <section id="error-relativo-de-muestreo-dado-e-r-cv-hat-theta">
-<h4><span class="section-number">3.4.2.2. </span>Error relativo de muestreo dado. <span class="math notranslate nohighlight">\(e_{r}=CV(\hat{\theta})\)</span><a class="headerlink" href="#error-relativo-de-muestreo-dado-e-r-cv-hat-theta" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">3.5.2.2. </span>Error relativo de muestreo dado. <span class="math notranslate nohighlight">\(e_{r}=CV(\hat{\theta})\)</span><a class="headerlink" href="#error-relativo-de-muestreo-dado-e-r-cv-hat-theta" title="Permalink to this heading">#</a></h4>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>media</p></th>
@@ -536,7 +562,7 @@ sin reposición.</p>
 </table>
 </section>
 <section id="error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta">
-<h4><span class="section-number">3.4.2.3. </span>Error de muestreo y coeficientes de confianza dados. <span class="math notranslate nohighlight">\(e_{\alpha}=z_{\alpha/2}\sigma(\hat{\theta})\)</span><a class="headerlink" href="#error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">3.5.2.3. </span>Error de muestreo y coeficientes de confianza dados. <span class="math notranslate nohighlight">\(e_{\alpha}=z_{\alpha/2}\sigma(\hat{\theta})\)</span><a class="headerlink" href="#error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta" title="Permalink to this heading">#</a></h4>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>media</p></th>
@@ -555,7 +581,7 @@ sin reposición.</p>
 </table>
 </section>
 <section id="error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta">
-<h4><span class="section-number">3.4.2.4. </span>Error relativo de muestreo y coeficiente de confianza dados.<span class="math notranslate nohighlight">\(e_{r\alpha}=z_{\alpha/2}CV(\hat{\theta})\)</span><a class="headerlink" href="#error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">3.5.2.4. </span>Error relativo de muestreo y coeficiente de confianza dados.<span class="math notranslate nohighlight">\(e_{r\alpha}=z_{\alpha/2}CV(\hat{\theta})\)</span><a class="headerlink" href="#error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta" title="Permalink to this heading">#</a></h4>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>media</p></th>
@@ -576,7 +602,7 @@ sin reposición.</p>
 </section>
 </section>
 <section id="notas">
-<h2><span class="section-number">3.5. </span>Notas.<a class="headerlink" href="#notas" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.6. </span>Notas.<a class="headerlink" href="#notas" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>El muestreo sin reposición es más preciso que el muestreo con
 reposición.</p></li>
@@ -1105,28 +1131,34 @@ estimador insesgado de <span class="math notranslate nohighlight">\(\sigma^{2}\)
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3. Formulario Muestreo</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-muestreo">3.1. Tipos de muestreo.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-aleatorio-simple">3.2. Muestreo aleatorio simple.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-sin-reposicion">3.3. Muestreo sin reposición.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimacion-de-varianzas">3.3.1. Estimación de varianzas.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tamano-de-la-muestra">3.3.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado">3.3.2.1. Para un error de muestreo dado.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-relativo-de-muestreo-dado">3.3.2.2. Para un error relativo de muestreo dado.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intervalos-de-confianza-con-normalidad">3.2. Intervalos de Confianza con normalidad</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#se-puede-suponer-hay-insesgadez">3.2.1. Se puede suponer hay insesgadez</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-hay-distribucion-normal">3.2.2. No hay distribución normal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#el-estimador-es-sesgado">3.2.3. El estimador es sesgado</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-aleatorio-simple">3.3. Muestreo aleatorio simple.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-sin-reposicion">3.4. Muestreo sin reposición.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimacion-de-varianzas">3.4.1. Estimación de varianzas.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tamano-de-la-muestra">3.4.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado">3.4.2.1. Para un error de muestreo dado.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-relativo-de-muestreo-dado">3.4.2.2. Para un error relativo de muestreo dado.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-con-reposicion">3.4. Muestreo con reposición.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.4.1. Estimación de varianzas.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.4.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado-e-sigma-hat-theta">3.4.2.1. Para un error de muestreo dado.<span class="math notranslate nohighlight">\(e=\sigma(\hat{\theta}).\)</span></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-dado-e-r-cv-hat-theta">3.4.2.2. Error relativo de muestreo dado. <span class="math notranslate nohighlight">\(e_{r}=CV(\hat{\theta})\)</span></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta">3.4.2.3. Error de muestreo y coeficientes de confianza dados. <span class="math notranslate nohighlight">\(e_{\alpha}=z_{\alpha/2}\sigma(\hat{\theta})\)</span></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta">3.4.2.4. Error relativo de muestreo y coeficiente de confianza dados.<span class="math notranslate nohighlight">\(e_{r\alpha}=z_{\alpha/2}CV(\hat{\theta})\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-con-reposicion">3.5. Muestreo con reposición.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.5.1. Estimación de varianzas.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.5.2. Tamaño de la muestra.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#para-un-error-de-muestreo-dado-e-sigma-hat-theta">3.5.2.1. Para un error de muestreo dado.<span class="math notranslate nohighlight">\(e=\sigma(\hat{\theta}).\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-dado-e-r-cv-hat-theta">3.5.2.2. Error relativo de muestreo dado. <span class="math notranslate nohighlight">\(e_{r}=CV(\hat{\theta})\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-de-muestreo-y-coeficientes-de-confianza-dados-e-alpha-z-alpha-2-sigma-hat-theta">3.5.2.3. Error de muestreo y coeficientes de confianza dados. <span class="math notranslate nohighlight">\(e_{\alpha}=z_{\alpha/2}\sigma(\hat{\theta})\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-relativo-de-muestreo-y-coeficiente-de-confianza-dados-e-r-alpha-z-alpha-2-cv-hat-theta">3.5.2.4. Error relativo de muestreo y coeficiente de confianza dados.<span class="math notranslate nohighlight">\(e_{r\alpha}=z_{\alpha/2}CV(\hat{\theta})\)</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas">3.5. Notas.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas">3.6. Notas.</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#muestreo-estratificado">4. Muestreo estratificado.</a><ul class="visible nav section-nav flex-column">
