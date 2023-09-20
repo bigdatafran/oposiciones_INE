@@ -15,5 +15,8 @@ un correo electrónico a la siguiente dirección: apuntesfranciscoro@movistar.es
 Un saludo y mucha suerte a l@s jóvenes que quieran participar en este gran proyecto para el País, como es la aportación de información 
 estadísitica de enorme relevancia y trascendencia para el desarrollo de España.
 
+Para otros trabajos del autor, todos ellos relacionados con el campo de la estadística, 
+<a href="https://bigdatafran.github.io/oposiciones_INE/OtrosTrabajos.html" target="_blank"> se pùede consultar este enlace </a>.
+
 Francisco Rodríguez Redondo
 
