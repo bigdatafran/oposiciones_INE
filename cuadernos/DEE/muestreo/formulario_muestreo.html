@@ -332,7 +332,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">4.5.3. Afijación uniforme.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">4.5.4. Afijación proporcional.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#afijacion-de-minima-varianza-o-de-neyman">4.5.5. Afijación de mínima varianza o de Neyman.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">4.5.6. Afijación óptima.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">4.5.6. Afijación óptima</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4.5.7. Tamaño de la muestra.</a></li>
 </ul>
 </li>
@@ -656,11 +656,18 @@ reposición.</p></li>
 <h3><span class="section-number">4.3.1. </span>Afijación uniforme.<a class="headerlink" href="#afijacion-uniforme" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[n_{h}=k\]</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>          $V(\hat{X}_{st})=\sum_{h}N_{h}^{2}(1-\frac{k}{N_{h}})\frac{S_{h}^{2}}{k}$              $V(\overline{x}_{st})=\sum_{h}W_{h}^{2}(1-\frac{k}{N_{h}})\frac{S_{h}^{2}}{k}$
-</pre></div>
-</div>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\sum_{h}N_{h}^{2}(1-\frac{k}{N_{h}})\frac{N_{h}}{N_{h}-1}\frac{P_{h}Q_{h}}{k}\)</span>     <span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\sum_{h}W_{h}^{2}(1-\frac{k}{N_{h}})\frac{P_{h}Q_{h}}{k}\)</span></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\sum_{h}N_{h}^{2}(1-\frac{k}{N_{h}})\frac{S_{h}^{2}}{k}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\sum_{h}W_{h}^{2}(1-\frac{k}{N_{h}})\frac{S_{h}^{2}}{k}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\sum_{h}N_{h}^{2}(1-\frac{k}{N_{h}})\frac{N_{h}}{N_{h}-1}\frac{P_{h}Q_{h}}{k}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\sum_{h}W_{h}^{2}(1-\frac{k}{N_{h}})\frac{P_{h}Q_{h}}{k}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="afijacion-proporcional">
 <h3><span class="section-number">4.3.2. </span>Afijación proporcional.<a class="headerlink" href="#afijacion-proporcional" title="Permalink to this heading">#</a></h3>
@@ -668,18 +675,30 @@ reposición.</p></li>
 \[\frac{n_{h}}{N_{h}}=k;\ k=\frac{n}{N}=f;\ f_{h}=f;\ W_{h}=\frac{N_{h}}{N}=\frac{n_{h}}{n}\]</div>
 <div class="math notranslate nohighlight">
 \[\hat{X_{st}}=\frac{x}{f}=\frac{Total\ muestral}{Fracci\acute{o}n\ muestreo};\ \hat{\overline{X}_{st}}=\frac{Total\ muestral}{Tama\tilde{n}o\ muestra}\]</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>         $V(\hat{X}_{st})=\frac{1-k}{k}\sum_{h}N_{h}S_{h}^{2}$                          $V(\overline{x}_{st})=\frac{1-k}{n}\sum_{h}W_{h}S_{h}^{2}$
-</pre></div>
-</div>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\frac{1-k}{k}\sum_{h}\frac{N_{h}^{2}}{N_{h}-1}P_{h}Q_{h}\)</span>   <span class="math notranslate nohighlight">\(V(\text{\ensuremath{\hat{P}_{st})=}}\sum_{h}\frac{N_{h}^{2}/N}{N_{h}-1}P_{h}Q_{h}\)</span></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1-k}{k}\sum_{h}N_{h}S_{h}^{2}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\frac{1-k}{n}\sum_{h}W_{h}S_{h}^{2}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\frac{1-k}{k}\sum_{h}\frac{N_{h}^{2}}{N_{h}-1}P_{h}Q_{h}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\sum_{h}\frac{N_{h}^{2}/N}{N_{h}-1}P_{h}Q_{h}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="afijacion-de-minima-varianza-afijacion-de-neyman">
 <h3><span class="section-number">4.3.3. </span>afijación de mínima varianza ( afijación de Neyman).<a class="headerlink" href="#afijacion-de-minima-varianza-afijacion-de-neyman" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[n_{h}=n\cdot\frac{N_{h}S_{h}}{\sum_{h}N_{h}S_{h}}\]</div>
-<p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}S_{h}\right)^{2}-\frac{1}{N}\sum_{h=1}^{L}N_{h}S_{h}^{2}\)</span>   <span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}S_{h}\right)^{2}-\frac{1}{N}\sum_{h=1}^{L}W_{h}S_{h}^{2}\)</span></p>
-<hr class="docutils" />
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}S_{h}\right)^{2}-\frac{1}{N}\sum_{h=1}^{L}N_{h}S_{h}^{2}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}S_{h}\right)^{2}-\frac{1}{N}\sum_{h=1}^{L}W_{h}S_{h}^{2}\)</span></p></th>
+</tr>
+</thead>
+</table>
 <p>Para obtener la afijación o la expresión de la varianza mínima para la
 proporción y el total de clase, en las fórmulas anteriores, se sustituye
 <span class="math notranslate nohighlight">\(S_{h}^{2}\)</span> por <span class="math notranslate nohighlight">\(P_{h}Q_{h}N_{h}/(N_{h}-1)\)</span></p>
@@ -688,14 +707,12 @@ proporción y el total de clase, en las fórmulas anteriores, se sustituye
 <h3><span class="section-number">4.3.4. </span>Afijación óptima.<a class="headerlink" href="#afijacion-optima" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[n_{h}=n\cdot\frac{N_{h}S_{h}/\sqrt{c_{h}}}{\sum_{h}N_{h}S_{h}/\sqrt{c_{h}}}\]</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> $V(\hat{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}S_{h}/\sqrt{c_{h}}\right)\cdot\left(\sum_{h=1}^{L}N_{h}S_{h}\cdot\sqrt{c_{h}}\right)-\frac{1}{N}\sum_{h=1}^{L}N_{h}S_{h}^{2}$
-</pre></div>
-</div>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}S_{h}/\sqrt{c_{h}}\right)\cdot\left(\sum_{h=1}^{L}W_{h}S_{h}\cdot\sqrt{c_{h}}\right)-\frac{1}{N}\sum_{h=1}^{L}W_{h}S_{h}^{2}\)</span></p>
-<p>Para obtener la afijación o la expresión de la varianza mínima para la
-proporción y el total de clase, en las fórmulas anteriores, se sustituye
-<span class="math notranslate nohighlight">\(S_{h}^{2}\)</span> por <span class="math notranslate nohighlight">\(P_{h}Q_{h}N_{h}/(N_{h}-1)\)</span></p>
+<div class="math notranslate nohighlight">
+\[V(\hat{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}S_{h}/\sqrt{c_{h}}\right)\cdot\left(\sum_{h=1}^{L}N_{h}S_{h}\cdot\sqrt{c_{h}}\right)-\frac{1}{N}\sum_{h=1}^{L}N_{h}S_{h}^{2}\]</div>
+<div class="math notranslate nohighlight">
+\[V(\overline{x}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}S_{h}/\sqrt{c_{h}}\right)\cdot\left(\sum_{h=1}^{L}W_{h}S_{h}\cdot\sqrt{c_{h}}\right)-\frac{1}{N}\sum_{h=1}^{L}W_{h}S_{h}^{2}\]</div>
+<p>Para obtener la afijación o la expresión de la varianza mínima para la proporción y el total de clase, en las fórmulas anteriores, se sustituye</p>
+<p><span class="math notranslate nohighlight">\(S_{h}^{2}\)</span> por <span class="math notranslate nohighlight">\(P_{h}Q_{h}N_{h}/(N_{h}-1)\)</span></p>
 </section>
 </section>
 <section id="id4">
@@ -774,57 +791,102 @@ muestra para la estimación de la media y el total respectivamente.</p>
 de clase son los mismos que en el caso sin reposición.</p>
 <section id="varianzas-de-los-estimadores">
 <h3><span class="section-number">4.5.1. </span>Varianzas de los estimadores.<a class="headerlink" href="#varianzas-de-los-estimadores" title="Permalink to this heading">#</a></h3>
-<p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\sum_{h}N_{h}^{2}\frac{\sigma_{h}^{2}}{n_{h}}\)</span>   <span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\sum_{h}W_{h}^{2}\frac{\sigma_{h}^{2}}{n_{h}}\)</span></p>
-<hr class="docutils" />
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  $V(\hat{A}_{st})=\sum N_{h}^{2}\frac{P_{h}Q_{h}}{n_{h}}$           $V(\hat{P}_{st})=\sum_{h}W_{h}^{2}\frac{P_{h}Q_{h}}{n_{h}}$
-</pre></div>
-</div>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\sum_{h}N_{h}^{2}\frac{\sigma_{h}^{2}}{n_{h}}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\sum_{h}W_{h}^{2}\frac{\sigma_{h}^{2}}{n_{h}}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\sum N_{h}^{2}\frac{P_{h}Q_{h}}{n_{h}}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\sum_{h}W_{h}^{2}\frac{P_{h}Q_{h}}{n_{h}}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="id7">
 <h3><span class="section-number">4.5.2. </span>Estimación de varianzas.<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  $\hat{V}(\hat{X}_{st})=\sum_{h}N_{h}^{2}\frac{\hat{S}{}_{h}^{2}}{n_{h}}$        $\hat{V}(\overline{x}_{st})=\sum_{h}W_{h}^{2}\frac{\hat{S}{}_{h}^{2}}{n_{h}}$
-</pre></div>
-</div>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(\hat{V}(\hat{A}_{st})=\sum_{h}N_{h}^{2}\frac{\hat{P}_{h}\hat{Q}_{h}}{n_{h}-1}\)</span>   <span class="math notranslate nohighlight">\(\hat{V}(\hat{P}_{st})=\sum_{h}W_{h}^{2}\frac{\hat{P}_{h}\hat{Q}_{h}}{n_{h}-1}\)</span></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\hat{V}(\hat{X}_{st})=\sum_{h}N_{h}^{2}\frac{\hat{S}{}_{h}^{2}}{n_{h}}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\hat{V}\overline{x}_{st})=\sum_{h}W_{h}^{2}\frac{\hat{S}{}_{h}^{2}}{n_{h}}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\hat{V}(\hat{A}_{st})=\sum_{h}N_{h}^{2}\frac{\hat{P}_{h}\hat{Q}_{h}}{n_{h}-1}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\hat{V}(\hat{P}_{st})=\sum_{h}W_{h}^{2}\frac{\hat{P}_{h}\hat{Q}_{h}}{n_{h}-1}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="id8">
 <h3><span class="section-number">4.5.3. </span>Afijación uniforme.<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
-<p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\sum N_{h}^{2}\frac{\sigma_{h}^{2}}{k}\)</span>   <span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\sum_{h}W_{h}^{2}\frac{\sigma_{h}^{2}}{k}\)</span></p>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\sum_{h}N_{h}^{2}\frac{P_{h}Q_{h}}{k}\)</span>        <span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\sum_{h}W_{h}^{2}\frac{P_{h}Q_{h}}{k}\)</span></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\sum N_{h}^{2}\frac{\sigma_{h}^{2}}{k}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\sum_{h}W_{h}^{2}\frac{\sigma_{h}^{2}}{k}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\sum_{h}N_{h}^{2}\frac{P_{h}Q_{h}}{k}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\sum_{h}W_{h}^{2}\frac{P_{h}Q_{h}}{k}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="id9">
 <h3><span class="section-number">4.5.4. </span>Afijación proporcional.<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
-<p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1}{k}\sum_{h}N_{h}\sigma_{h}^{2}\)</span>   <span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\frac{1}{n}\sum_{h}W_{h}\sigma_{h}^{2}\)</span></p>
-<hr class="docutils" />
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> $V(\hat{A}_{st})=\frac{1}{k}\sum_{h}N_{h}P_{h}Q_{h}$     $V(\hat{P}_{st})=\frac{1}{n}\sum_{h}W_{h}\frac{P_{h}Q_{h}}{k}$
-</pre></div>
-</div>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1}{k}\sum_{h}N_{h}\sigma_{h}^{2}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(V(\overline{x}_{st})=\frac{1}{n}\sum_{h}W_{h}\sigma_{h}^{2}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(V(\hat{A}_{st})=\frac{1}{k}\sum_{h}N_{h}P_{h}Q_{h}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(V(\hat{P}_{st})=\frac{1}{n}\sum_{h}W_{h}\frac{P_{h}Q_{h}}{k}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="afijacion-de-minima-varianza-o-de-neyman">
 <h3><span class="section-number">4.5.5. </span>Afijación de mínima varianza o de Neyman.<a class="headerlink" href="#afijacion-de-minima-varianza-o-de-neyman" title="Permalink to this heading">#</a></h3>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                                    media                                                                              total
-</pre></div>
-</div>
-<hr class="docutils" />
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>           $n_{h}=n\frac{N_{h}\sigma_{h}}{\sum_{h}N_{h}\sigma_{h}}$                           $n_{h}=n\frac{W_{h}\sigma_{h}}{\sum_{h}W_{h}\sigma_{h}}$
-</pre></div>
-</div>
-<p><span class="math notranslate nohighlight">\(V(\overline{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}\sigma_{h}\right)^{2}\)</span>   <span class="math notranslate nohighlight">\(V(\overline{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}\sigma_{h}\right)^{2}\)</span></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>media</p></th>
+<th class="head"><p>total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(n_{h}=n\frac{N_{h}\sigma_{h}}{\sum_{h}N_{h}\sigma_{h}}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{h}=n\frac{W_{h}\sigma_{h}}{\sum_{h}W_{h}\sigma_{h}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(V(\overline{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}\sigma_{h}\right)^{2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(V(\overline{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}\sigma_{h}\right)^{2}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <p>Si se quiere esta afijación para la proporción y el total de clase, hay
 que sustituir <span class="math notranslate nohighlight">\(\sigma_{h}\)</span> en la expresión anterior por <span class="math notranslate nohighlight">\(P_{h}Q_{h}\)</span></p>
 </section>
 <section id="id10">
-<h3><span class="section-number">4.5.6. </span>Afijación óptima.<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                                                                      media                                                                                                                                                total
-</pre></div>
-</div>
-<hr class="docutils" />
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                               $n_{h}=n\frac{N_{h}\sigma_{h}/\sqrt{c_{h}}}{\sum_{h}(N_{h}\sigma_{h})/\sqrt{c_{h}}}$                                                                $n_{h}=n\frac{W_{h}\sigma_{h}/\sqrt{c_{h}}}{\sum_{h}(W_{h}\sigma_{h})/\sqrt{c_{h}}}$
-</pre></div>
-</div>
-<p><span class="math notranslate nohighlight">\(V(\overline{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}\sigma_{h}/\sqrt{c_{h}}\left(\sum_{h=1}^{L}W_{h}\sigma_{h}\cdot\sqrt{c_{h}}\right)\right)\)</span>   <span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}\sigma_{h}/\sqrt{c_{h}}\left(\sum_{h=1}^{L}N_{h}\sigma_{h}\cdot\sqrt{c_{h}}\right)\right)\)</span></p>
+<h3><span class="section-number">4.5.6. </span>Afijación óptima<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>media</p></th>
+<th class="head"><p>total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(n_{h}=n\frac{N_{h}\sigma_{h}/\sqrt{c_{h}}}{\sum_{h}(N_{h}\sigma_{h})/\sqrt{c_{h}}}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(n_{h}=n\frac{W_{h}\sigma_{h}/\sqrt{c_{h}}}{\sum_{h}(W_{h}\sigma_{h})/\sqrt{c_{h}}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(V(\hat{\overline{X}}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}W_{h}\sigma_{h}/\sqrt{c_{h}}\left(\sum_{h=1}^{L}W_{h}\sigma_{h}\cdot\sqrt{c_{h}}\right)\right)\)</span></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(V(\hat{X}_{st})=\frac{1}{n}\left(\sum_{h=1}^{L}N_{h}\sigma_{h}/\sqrt{c_{h}}\left(\sum_{h=1}^{L}N_{h}\sigma_{h}\cdot\sqrt{c_{h}}\right)\right)\)</span></p>
 <p>Si se quiere esta afijación para la proporción y el total de clase, hay
 que sustituir <span class="math notranslate nohighlight">\(\sigma_{h}\)</span> en la expresión anterior por <span class="math notranslate nohighlight">\(P_{h}Q_{h}\)</span></p>
 </section>
@@ -1195,7 +1257,7 @@ estimador insesgado de <span class="math notranslate nohighlight">\(\sigma^{2}\)
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">4.5.3. Afijación uniforme.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">4.5.4. Afijación proporcional.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#afijacion-de-minima-varianza-o-de-neyman">4.5.5. Afijación de mínima varianza o de Neyman.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">4.5.6. Afijación óptima.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">4.5.6. Afijación óptima</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4.5.7. Tamaño de la muestra.</a></li>
 </ul>
 </li>
