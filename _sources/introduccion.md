@@ -1,7 +1,7 @@
 # Oposiones INE.
 
-Con fecha de septiembre de 2013 comienzo este trabajo de recopilación y síntexis de información sobre diferentes aspectos 
-que rodean a las opoosiciones convocadas por el Instituto Nacional de Estadística.
+Con fecha de septiembre de 2013 comienzo este trabajo de recopilación y síntesis de información sobre diferentes aspectos 
+que rodean a las oposiciones convocadas por el Instituto Nacional de Estadística.
 
 Mi objetivo con este trabajo es facilitar información a opositores para la entrada a este Organismo de la Administración General del Estado.
 
@@ -13,7 +13,7 @@ Nada más, simplemente me resta que cualquier duda, aportación, sugerencia o ne
 un correo electrónico a la siguiente dirección: apuntesfranciscoro@movistar.es    
 
 Un saludo y mucha suerte a l@s jóvenes que quieran participar en este gran proyecto para el País, como es la aportación de información 
-estadísitica de enorme relevancia y trascendencia para el desarrollo de España.
+estadística de enorme relevancia y trascendencia para el desarrollo de España.
 
 ## Otros trabajos.
 
