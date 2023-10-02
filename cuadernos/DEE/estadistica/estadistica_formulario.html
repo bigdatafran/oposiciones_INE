@@ -320,40 +320,56 @@ document.write(`
 <strong>Ley Multiplicativa para probabilidades condicionadas:</strong>
 <span class="math notranslate nohighlight">\(P(A\cap B)= P(B)P(A|B)=P(A)P(B|A)\)</span>.<br />
 <strong>Sucesos independientes:</strong> <span class="math notranslate nohighlight">\(P(A|B)=P(A)\)</span>; <span class="math notranslate nohighlight">\(P(A\cap B)=P(A)P(B)\)</span>.</p>
+<p id="index-0"><strong>Teorema probabilidades totales</strong>: <span class="math notranslate nohighlight">\(P(B)=\sum_{j=1}^{k}P(B/A_{j})\cdot P(A_{j})\qquad A_{1},A_{2},...,A_{k}\ partici\acute{o}n\ de\ \omega\)</span></p>
+<p><strong>Teorema de Bayes</strong> : <span class="math notranslate nohighlight">\(P(A_{i}/B)=\frac{P(B/A_{i})\cdot P(A_{i})}{\sum_{j=1}^{k}P(B/A_{j})\cdot P(A_{j})}\)</span></p>
 </section>
 <section id="tema-2">
 <h2><span class="section-number">1.2. </span>Tema 2<a class="headerlink" href="#tema-2" title="Permalink to this heading">#</a></h2>
 <p>Para variables aleatorias discretas se define la <strong>función de
-probabilidad</strong> <span class="math notranslate nohighlight">\(P_i= P(X=i), i\in I\)</span>, que satisface 1)
-<span class="math notranslate nohighlight">\(P_i= P(X=i)\geq 0, i\in I\)</span> y 2)
-<span class="math notranslate nohighlight">\(\sum_{i \in I} P_i= \sum_{i \in I} P(X=i) = P(\Omega)=1\)</span>.<br />
-Para variables aleatorias continuas cuando su <strong>función de
-distribución</strong> <span class="math notranslate nohighlight">\(F(x)\)</span> es continua. En ese caso, existe una función de
-desidad <span class="math notranslate nohighlight">\(f(x)\)</span> tal que <span class="math notranslate nohighlight">\(\forall x \in  \mathbb{R}\)</span>
+probabilidad</strong> <span class="math notranslate nohighlight">\(P_i= P(X=i), i\in I\)</span>, que satisface</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(P_i= P(X=i)\geq 0, i\in I\)</span> y</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sum_{i \in I} P_i= \sum_{i \in I} P(X=i) = P(\Omega)=1\)</span>.</p></li>
+</ol>
+<p>Para variables aleatorias continuas cuando su <strong>función de distribución</strong> <span class="math notranslate nohighlight">\(F(x)\)</span> es continua. En ese caso, existe una función de densidad <span class="math notranslate nohighlight">\(f(x)\)</span> tal que <span class="math notranslate nohighlight">\(\forall x \in  \mathbb{R}\)</span>
 <span class="math notranslate nohighlight">\(F(x)= \int_{-\infty}^x f(s)ds \Leftrightarrow \frac{\partial}{\partial x}F(x)=f(x)\)</span>
-y verifica 1)<span class="math notranslate nohighlight">\(f(x)\geq 0\)</span>, <span class="math notranslate nohighlight">\(\forall x \in  \mathbb{R}\)</span> y
-2)<span class="math notranslate nohighlight">\(\int_{-\infty}^{\infty} f(x)dx =1\)</span>.</p>
+y verifica</p>
+<p>1)<span class="math notranslate nohighlight">\(f(x)\geq 0\)</span>, <span class="math notranslate nohighlight">\(\forall x \in  \mathbb{R}\)</span> y</p>
+<p>2)<span class="math notranslate nohighlight">\(\int_{-\infty}^{\infty} f(x)dx =1\)</span>.</p>
+<p>Para ver diferentes distribuciones de variables estadísticas,<a href="https://bigdatafran.github.io/big_data/img/FuncionesestadisticasOK.pdf" target="_blank"> consultar este enlace </a>.</p>
 </section>
 <section id="tema-3">
 <h2><span class="section-number">1.3. </span>Tema 3<a class="headerlink" href="#tema-3" title="Permalink to this heading">#</a></h2>
 <p><strong>Esperanza de una distribución discreta:</strong>
-<span class="math notranslate nohighlight">\(E(X)=\sum_{i \in I} iP(X=i)\)</span>.<br />
-<strong>Esperanza de una distribución continua:</strong>
-<span class="math notranslate nohighlight">\(E(X)= \int_{-\infty}^{\infty}xf(x)dx\)</span>.<br />
-Propiedades de la esperanza: 1)Sea <span class="math notranslate nohighlight">\(Y=aX+b\)</span> entonces <span class="math notranslate nohighlight">\(E(Y)=aE(X)+b\)</span> y
-2)<span class="math notranslate nohighlight">\(E(XY)\neq E(X)E(Y)\)</span>, a excepción de que X e Y sean independientes.<br />
-<strong>Varianza:</strong> <span class="math notranslate nohighlight">\(Var(X)=E(X^2)-E^2(X)\)</span><br />
-Propiedades de la varianza: 1)<span class="math notranslate nohighlight">\(Var(X)=0\Leftrightarrow\)</span> existe una
-constante <span class="math notranslate nohighlight">\(c\)</span> tal que <span class="math notranslate nohighlight">\(P(X=c)=1\)</span>, 2)sea <span class="math notranslate nohighlight">\(Y=aX+b\)</span> entonces
-<span class="math notranslate nohighlight">\(Var(Y)=a^2Var(X)\)</span> y 3)<span class="math notranslate nohighlight">\(Var(-X)=Var(X)\)</span>.<br />
-<strong>Función generatriz:</strong> considerando una variable aleatoria X, para cada
+<span class="math notranslate nohighlight">\(E(X)=\sum_{i \in I} iP(X=i)\)</span>.</p>
+<p><strong>Esperanza de una distribución continua:</strong>
+<span class="math notranslate nohighlight">\(E(X)= \int_{-\infty}^{\infty}xf(x)dx\)</span>.</p>
+<p>Propiedades de la esperanza matemática:</p>
+<p>1)Sea <span class="math notranslate nohighlight">\(Y=aX+b\)</span> entonces <span class="math notranslate nohighlight">\(E(Y)=aE(X)+b\)</span> y</p>
+<p>2)<span class="math notranslate nohighlight">\(E(XY)\neq E(X)E(Y)\)</span>, a excepción de que X e Y sean independientes.</p>
+<p><strong>Varianza:</strong> <span class="math notranslate nohighlight">\(Var(X)=E(X^2)-E^2(X) =E(X-E(X))^2\)</span></p>
+<p>Propiedades de la varianza:
+1)<span class="math notranslate nohighlight">\(Var(X)=0\Leftrightarrow\)</span> existe una
+constante <span class="math notranslate nohighlight">\(c\)</span> tal que <span class="math notranslate nohighlight">\(P(X=c)=1\)</span>,</p>
+<p>2)sea <span class="math notranslate nohighlight">\(Y=aX+b\)</span> entonces
+<span class="math notranslate nohighlight">\(Var(Y)=a^2Var(X)\)</span> y</p>
+<p>3)<span class="math notranslate nohighlight">\(Var(-X)=Var(X)\)</span>.</p>
+<p><strong>Momento de orden k respecto del origen</strong>: <span class="math notranslate nohighlight">\(E(X^k)\)</span></p>
+<p id="index-1"><strong>Función generatriz:</strong> considerando una variable aleatoria X, para cada
 número real <span class="math notranslate nohighlight">\(t\)</span> se define <span class="math notranslate nohighlight">\(\Psi (t)=E(e^{tX})\)</span>. Donde <span class="math notranslate nohighlight">\(\Psi'(0)=E(X)\)</span>,
-<span class="math notranslate nohighlight">\(\Psi''(0)=E(X^2)\)</span>, …<br />
-<strong>Función característica:</strong> considerando una variable aleatoria X, para
+<span class="math notranslate nohighlight">\(\Psi''(0)=E(X^2)\)</span>, …\</p>
+<p><strong>Propiedades función genratriz de momentos:</strong></p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(Y=a+bX;\Rightarrow\Psi_{Y}(t)=e^{bt}\Psi_{X}(at)\)</span></p></li>
+<li><p>si las funciones generatrices de <span class="math notranslate nohighlight">\(X_1\)</span> y <span class="math notranslate nohighlight">\(X_2\)</span> son idénticas alrededor del punto t=0, entonces las distribuciones de probabilidad de <span class="math notranslate nohighlight">\(X_1\)</span> y <span class="math notranslate nohighlight">\(X_2\)</span> son idénticas.</p></li>
+</ol>
+<p><strong>Función característica:</strong> considerando una variable aleatoria X, para
 cada número real <span class="math notranslate nohighlight">\(t\)</span> se define la función compleja
-<span class="math notranslate nohighlight">\(\varphi_X (t)=E(e^{itX})\)</span>.<br />
-Saber que la función característica es función generatriz de momentos:
+<span class="math notranslate nohighlight">\(\varphi_X (t)=E(e^{itX})\)</span>.</p>
+<p>Saber que la función característica es función generatriz de momentos:
 <span class="math notranslate nohighlight">\(EX^n= \frac{\varphi^{n)}_X(0)}{i^n}\)</span>.</p>
+<p><strong>Desigualdad de Markov</strong>: <span class="math notranslate nohighlight">\(P(X\geqq0)\Rightarrow P(X\geqq t)=\frac{E(X)}{t}\)</span></p>
+<p id="index-2"><strong>Desigualdad de Chebyshev</strong>:<span class="math notranslate nohighlight">\(P(\left|X-E(X)\right|\geq t)\le\frac{Var(X)}{t^{2}}\Rightarrow P(\left|X-E(X)\right|\geq3\sigma)\le\frac{1}{9}\)</span></p>
 </section>
 <section id="tema-4">
 <h2><span class="section-number">1.4. </span>Tema 4<a class="headerlink" href="#tema-4" title="Permalink to this heading">#</a></h2>
@@ -971,7 +987,7 @@ son linealmente dependientes.</p>
 <h2><span class="section-number">1.21. </span>Tema 21<a class="headerlink" href="#tema-21" title="Permalink to this heading">#</a></h2>
 <p><strong>Índices simples</strong>: <span class="math notranslate nohighlight">\(\frac{Y_t}{Y_0}*100\)</span>.</p>
 <p>Tasa de variación o variación porcentual:</p>
-<p id="index-0"><span class="math notranslate nohighlight">\(TV_{t_{1}}^{t_{2}}(Y)=\frac{Y_{t_{2}}-Y_{t_{1}}}{Y_{t_{1}}}\cdot100=\left(\frac{Y_{t_{2}}}{Y_{t_{1}}}-1\right)\cdot100=I_{t_{1}}^{t_{2}}-100\)</span></p>
+<p id="index-3"><span class="math notranslate nohighlight">\(TV_{t_{1}}^{t_{2}}(Y)=\frac{Y_{t_{2}}-Y_{t_{1}}}{Y_{t_{1}}}\cdot100=\left(\frac{Y_{t_{2}}}{Y_{t_{1}}}-1\right)\cdot100=I_{t_{1}}^{t_{2}}-100\)</span></p>
 <p>Propiedades:</p>
 <ol class="arabic simple">
 <li><p>Existencia,</p></li>
@@ -985,23 +1001,23 @@ son linealmente dependientes.</p>
 </ol>
 <p><strong>Índices complejos</strong>: ponderados y no ponderados.</p>
 <p>No ponderados:</p>
-<ol class="arabic simple" id="index-1">
+<ol class="arabic simple" id="index-4">
 <li><p>Índice de Bradstreet y Dûtot:</p></li>
 </ol>
 <p><span class="math notranslate nohighlight">\(I_1^t=\frac{\sum_{j=1}^n y_{ij}}{\sum_{j=1}^n y_{1j}}\)</span></p>
-<ol class="arabic simple" id="index-2" start="2">
+<ol class="arabic simple" id="index-5" start="2">
 <li><p>Índice de Sauerbek: <span class="math notranslate nohighlight">\(I_0^t=\frac{\sum_{j=1} ^n I_0^t(Y_j)}{n}\)</span>.</p></li>
 </ol>
 <p>Ponderados:</p>
-<ol class="arabic simple" id="index-3" start="3">
+<ol class="arabic simple" id="index-6" start="3">
 <li><p>Índice de Laspeyres:</p></li>
 </ol>
 <p><span class="math notranslate nohighlight">\(IPL_0^t=\frac{\sum_{i=1}^n p_{it}q_{i0}}{\sum_{i=1}^n p_{i0}q_{i0}}*100\)</span></p>
-<p id="index-4">4)Índice de Paasche:</p>
+<p id="index-7">4)Índice de Paasche:</p>
 <p><span class="math notranslate nohighlight">\(IPP_0^t=\frac{\sum_{i=1}^n p_{it}q_{it}}{\sum_{i=1}^n p_{i0}q_{it}}*100\)</span></p>
-<p id="index-5">5)Índice de Edgemorth:
+<p id="index-8">5)Índice de Edgemorth:
 <span class="math notranslate nohighlight">\(IPE_0^t=\frac{\sum_{i=1}^n p_{it}q_{i0}+\sum_{i=1}^n p_{it}q_{it}}{\sum_{i=1}^n p_{i0}q_{i0}+\sum_{i=1}^n p_{i0}q_{it}}*100\)</span></p>
-<p id="index-6">6)índice de Fisher: <span class="math notranslate nohighlight">\(\sqrt{IPL_0^t+IPP_0^t}\)</span></p>
+<p id="index-9">6)índice de Fisher: <span class="math notranslate nohighlight">\(\sqrt{IPL_0^t+IPP_0^t}\)</span></p>
 <p>Propiedades:</p>
 <ol class="arabic simple">
 <li><p>cumple las 8 anteriores; 2), 3) y 4) no cumplen inversión y la circular; 5) y 6) no cumplen la circular.</p></li>
@@ -1037,7 +1053,7 @@ multiplicativo.</p>
 </section>
 <section id="tema-25-gsbpm-i">
 <h2><span class="section-number">1.23. </span>Tema 25. GSBPM (I)<a class="headerlink" href="#tema-25-gsbpm-i" title="Permalink to this heading">#</a></h2>
-<ul class="simple" id="index-7">
+<ul class="simple" id="index-10">
 <li><p>GSBPM = Generic Statiscal Business Process Model. Modelo de proceso de negocio que describe de manera genérica las tareas de producción de las estadísiticas oficiales. Es un modelo estandarizado de producción.</p></li>
 <li><p>GSBPM no es un modelo rígido y se le debe dar cierta flexibilidad</p></li>
 <li><p>GSBPM tiene tres niveles <span class="math notranslate nohighlight">\(\begin{cases}
@@ -1050,7 +1066,7 @@ Nivel\ 2 &amp; subprocesos\ de\ cada\ fase
 </ul>
 <section id="otros-modelos-relacionados-con-gsbpm">
 <h3><span class="section-number">1.23.1. </span>Otros modelos relacionados con GSBPM<a class="headerlink" href="#otros-modelos-relacionados-con-gsbpm" title="Permalink to this heading">#</a></h3>
-<ul class="simple" id="index-8">
+<ul class="simple" id="index-11">
 <li><p><strong>GAMSO</strong>. Extiende y complementa a GSBPM y añade actividades necesarias para la producción estadística.</p></li>
 <li><p><strong>GSIM</strong>. Diseñado para la modernización y racionalización de las estadísticas oficiales.</p></li>
 </ul>
