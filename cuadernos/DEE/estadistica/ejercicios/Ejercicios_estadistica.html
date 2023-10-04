@@ -274,7 +274,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecicio-1">11.1. Ejecicio 1.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">11.1. Ejercicio 1.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">11.2. Ejercicio 2.</a></li>
 </ul>
             </nav>
         </div>
@@ -289,9 +290,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="introduccion-ejercicios-de-estadistica">
 <h1><span class="section-number">11. </span>Introducción. Ejercicios de Estadística<a class="headerlink" href="#introduccion-ejercicios-de-estadistica" title="Permalink to this heading">#</a></h1>
 <p>En este apartado se van a mostrar un serie de ejercicios de la parte de estadística</p>
-<section id="ejecicio-1">
-<h2><span class="section-number">11.1. </span>Ejecicio 1.<a class="headerlink" href="#ejecicio-1" title="Permalink to this heading">#</a></h2>
-<p>El índice al Comercio al por Menor (ICM) es un índice tipo Laspeyres encadenado a diciembre. La serie en base 2015 para los años 2018 y 2019 es la siguiente:</p>
+<section id="ejercicio-1">
+<h2><span class="section-number">11.1. </span>Ejercicio 1.<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h2>
+<p>El índice al Comercio al por Menor (ICM) es un índice tipo Laspeyres encadenado a diciembre. La serie en base 2015 para los años 2018 y 2019 es la siguiente (Oposiones DEE año 2023):</p>
 <p><img alt="image" src="../../../../_images/CuestionPractica10.png" /></p>
 <p>La muestra utilizada para el cálculo del índice en el año 2020 fue de 12.006 empresas. Conocemos los siguientes datos adicionales:</p>
 <p><img alt="image" src="../../../../_images/Anadidocuestion10.png" /></p>
@@ -354,6 +355,30 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[T.v=\left(\frac{130.688}{113.286}-1\right)*100=15.36\]</div>
 <p>El valor que obtenemos de esta manera nos indica que el volumen de facturación en comercio al por menor en el mes de diciembre de 2019 se incrementó en 15.34 por ciento en términos corrientes respecto al mes de noviembre de ese mismo año.</p>
+</div>
+</section>
+<section id="ejercicio-2">
+<h2><span class="section-number">11.2. </span>Ejercicio 2.<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h2>
+<p>A un puesto aduanero llegan periódicamente misiones diplomáticas procedentes de determinado país constituidas por 10 miembros. El citado país es un gran productor de marihuana, circunstancia que de vez en cuando es aprovechada por sus miembros por sus misiones diplomáticas para introducir algún que otro cargamento en el país que visitan siendo la forma de hacerlo el que dos de los diez miembros lleven en sus maletas la hierba.
+Los aduaneros están ya informados del truco, pero para no producir incidentes diplomáticos se limitan a inspeccionar dos de las diez maletas dejando pasar a la misión si en las maletas inspeccionadas no encuentran droga . Su experiencia les dice además que el 10% de las misiones portan droga.
+Si una misión inspeccionada no arroja resultados positivos ¿cual es la probabilidad de que realmente dicha misión no lleve droga alguna?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Click aquí para ver la solución!</p>
+<p><strong>Solución</strong>.</p>
+<p>Vamos a definir los siguientes sucesos:</p>
+<p><span class="math notranslate nohighlight">\(A_1\)</span> La delegación porta droga</p>
+<p><span class="math notranslate nohighlight">\(A_2\)</span> la delegación no lleva droga</p>
+<p><span class="math notranslate nohighlight">\(B\)</span> Una misión inspeccionada arroja resultado negativo</p>
+<p>Entonces de acuerdo al enunciado se tiene:</p>
+<div class="math notranslate nohighlight">
+\[P(A_1)=0.1 \qquad P(A_2)=0.9 \]</div>
+<p>Calculemos la <span class="math notranslate nohighlight">\(P(B|A_1)\)</span> para ello utilizamos la distribución hipergeométrica</p>
+<div class="math notranslate nohighlight">
+\[P(B/A_{1})=\frac{\binom{8}{2}\binom{2}{0}}{\binom{10}{2}}=\frac{28}{45} \]</div>
+<p>Por otro lado se tiene que <span class="math notranslate nohighlight">\(P(B|A_2)=1\)</span></p>
+<p>El problema lo que nos pide es <span class="math notranslate nohighlight">\(P(A_2|B)\)</span>. Esta probabilidad podemos calcularla con ayuda del teorema de Bayes. POr lo tanto.</p>
+<div class="math notranslate nohighlight">
+\[ p(A_{2}/B)=\frac{P(A_{2})P(B|A_{2})}{P(A_{1})P(B|A_{1})+P(A_{2})P(B|A_{2})}=0.93533 \]</div>
 </div>
 </section>
 </section>
@@ -425,7 +450,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecicio-1">11.1. Ejecicio 1.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">11.1. Ejercicio 1.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">11.2. Ejercicio 2.</a></li>
 </ul>
   </nav></div>
 
