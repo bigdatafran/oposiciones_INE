@@ -276,6 +276,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">11.1. Ejercicio 1.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">11.2. Ejercicio 2.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">11.3. Ejercicio 3</a></li>
 </ul>
             </nav>
         </div>
@@ -381,6 +382,38 @@ Si una misión inspeccionada no arroja resultados positivos ¿cual es la probabi
 \[ p(A_{2}/B)=\frac{P(A_{2})P(B|A_{2})}{P(A_{1})P(B|A_{1})+P(A_{2})P(B|A_{2})}=0.93533 \]</div>
 </div>
 </section>
+<section id="ejercicio-3">
+<h2><span class="section-number">11.3. </span>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h2>
+<p>Un ciudadano tiene la mala costumbre de emborracharse la mitad de los días. Para abrir su casa tiene un llavero en el que hay cinco llaves muy parecidas, una de las cuales es la que permite entrar. Incluso los días que está sereno, nuestro amigo, que es muy distraído y no reconoce cual de las llaves es la que abre la casa, tiene que probar  una a una las llaves hasta dar con la adecuada. Los días que está borracho prueba llave tras llave pero al ser incapaz de discernir si una llave ya ha sido probada o no, entrar en casa puede costarle un número más o menos elevado de pruebas.
+Si observándole un día a distancia vemos que el hombre logró entrar en su casa a la tercera tentativa ¿qué probabilidad asignaremos a la posibilidad de que ese día estuviera borracho?.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Click aquí para ver la solución!</p>
+<p><strong>Solución</strong>.
+Vamos a designar los siguiente sucesos:</p>
+<p><span class="math notranslate nohighlight">\(M_1\)</span> : El hombre no está borracho</p>
+<p><span class="math notranslate nohighlight">\(M_2\)</span> : El hombre está borracho</p>
+<p><span class="math notranslate nohighlight">\(B_i\)</span> encontro la lleve correcta a la i-ésima tentativa</p>
+<p>POr lo tanto lo que nos pide el problema es calcular <span class="math notranslate nohighlight">\(P(M_2|B_3)\)</span></p>
+<p>Por los datos del problema sabemos que:</p>
+<div class="math notranslate nohighlight">
+\[ P(M_1)=P(M_2)=0.5 \]</div>
+<p>Y además</p>
+<div class="math notranslate nohighlight">
+\[ P(B_{3}|M_{1})=\frac{4!}{5!}=\frac{1}{5} \]</div>
+<p>Pues 5! son las posibles ordenaciones de las cinco llaves y 4! son aquellas oedenaciones en la que la llave correcta está en tercer lugar.6</p>
+<p>Igualmente y aplicando la distribución geométrica o distribución de pascal, de obtener el primer éxito en el  tercer intento de abrir la cerradura, se obtendría:</p>
+<div class="math notranslate nohighlight">
+\[P(B_{3}|M_{2})=\left(\frac{4}{5}\right)^{2}\frac{1}{5}\]</div>
+<p>En consecuencia y aplicando el teorema de Bayes se obtiene</p>
+<div class="math notranslate nohighlight">
+\[P(M_{2}|B_{3})=\frac{P(B_{3}|M_{2})P(M_{2})}{P(B_{3}|M_{1})P(M_{1})+P(B_{3}|M_{2})P(M_{2})}=\frac{16}{41}\]</div>
+<p>Además, en el supuesto de que acertara a la primera, se tiene:</p>
+<div class="math notranslate nohighlight">
+\[P(M_{1}|B_{1})=P(M_{2}|B_{1})\]</div>
+<p>para <span class="math notranslate nohighlight">\(1&lt;n\le5\Rightarrow P(M_{2}|B_{n})&gt;p(M_{1}|B_{n})\)</span></p>
+<p>y para <span class="math notranslate nohighlight">\(n&gt;5\Rightarrow p(M_{2}|B_{n})=0&lt;P(M_{1}|B_{n})=1\)</span></p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -452,6 +485,7 @@ Si una misión inspeccionada no arroja resultados positivos ¿cual es la probabi
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">11.1. Ejercicio 1.</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">11.2. Ejercicio 2.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">11.3. Ejercicio 3</a></li>
 </ul>
   </nav></div>
 
